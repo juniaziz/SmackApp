@@ -244,6 +244,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLoginBtnPressed:" destination="hpb-Dr-jXH" eventType="touchUpInside" id="iBx-1T-2i9"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="XX1-kr-Exc">
                                 <rect key="frame" x="62.5" y="180" width="250" height="105"/>
@@ -316,6 +319,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="T65-0f-DZi" id="x1k-xK-rhb"/>
+                        <outlet property="userNameTxt" destination="Cuy-mt-wSI" id="jOJ-c9-W9C"/>
                         <segue destination="bpx-Ph-jTE" kind="show" identifier="toCreateAccount" id="HZb-59-RJH"/>
                     </connections>
                 </viewController>
