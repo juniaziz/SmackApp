@@ -221,7 +221,7 @@
                                     <action selector="logInBtnPressed:" destination="J2G-OZ-TTK" eventType="touchUpInside" id="FuC-cA-fe3"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uia-Jq-xtZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uia-Jq-xtZ" customClass="CircleImage" customModule="smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="KAF-3b-HPT"/>
@@ -523,7 +523,7 @@
                                     <action selector="pickAvaterBtnPressed:" destination="bpx-Ph-jTE" eventType="touchUpInside" id="hKT-ec-thu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="apL-uW-k5L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="apL-uW-k5L" customClass="CircleImage" customModule="smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="311" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Kte-f7-ooS"/>
@@ -559,6 +559,10 @@
                                     <action selector="createAccountBtnPressed:" destination="bpx-Ph-jTE" eventType="touchUpInside" id="taG-TQ-kkz"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jCe-du-fBg">
+                                <rect key="frame" x="169" y="265" width="37" height="37"/>
+                                <color key="color" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -570,6 +574,8 @@
                             <constraint firstItem="AE7-wp-xZo" firstAttribute="top" secondItem="NGj-it-qsr" secondAttribute="bottom" constant="8" id="Gtg-3A-fhE"/>
                             <constraint firstItem="apL-uW-k5L" firstAttribute="centerX" secondItem="yb0-6k-SuA" secondAttribute="centerX" id="KKt-TT-MCb"/>
                             <constraint firstItem="X5l-1Q-cy4" firstAttribute="width" secondItem="apL-uW-k5L" secondAttribute="width" id="NWq-bv-npG"/>
+                            <constraint firstItem="jCe-du-fBg" firstAttribute="centerY" secondItem="yb0-6k-SuA" secondAttribute="centerY" constant="-50" id="VSt-h1-rvj"/>
+                            <constraint firstItem="jCe-du-fBg" firstAttribute="centerX" secondItem="yb0-6k-SuA" secondAttribute="centerX" id="a18-VX-WGs"/>
                             <constraint firstItem="4yI-40-1Pg" firstAttribute="top" secondItem="ll8-f9-gZJ" secondAttribute="bottom" constant="100" id="bfq-nH-mq7"/>
                             <constraint firstItem="AE7-wp-xZo" firstAttribute="trailing" secondItem="yb0-6k-SuA" secondAttribute="trailingMargin" id="gDo-9u-cNP"/>
                             <constraint firstItem="JGv-ia-PjN" firstAttribute="centerX" secondItem="yb0-6k-SuA" secondAttribute="centerX" id="hx3-jY-q69"/>
@@ -582,6 +588,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="0nl-be-gP0" id="5ov-rN-BpK"/>
                         <outlet property="passwordTxt" destination="4xw-cY-svl" id="pPL-Qh-jcs"/>
+                        <outlet property="spinner" destination="jCe-du-fBg" id="HFc-4U-93H"/>
                         <outlet property="userImage" destination="apL-uW-k5L" id="HVz-Wm-lu7"/>
                         <outlet property="userNameTxt" destination="4Qw-ML-l6y" id="ro7-qc-SHy"/>
                         <segue destination="u34-ME-Ud8" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="Jcl-Wh-v7Y"/>

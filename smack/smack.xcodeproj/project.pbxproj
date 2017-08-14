@@ -24,6 +24,7 @@
 		88F3A77E1F2F2C6A00174869 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3A77D1F2F2C6A00174869 /* Constants.swift */; };
 		88F3A7801F2F32CE00174869 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3A77F1F2F32CE00174869 /* LoginVC.swift */; };
 		88F3A7821F2F348E00174869 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3A7811F2F348E00174869 /* CreateAccountVC.swift */; };
+		88FFDC451F417FC6005658A7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFDC441F417FC6005658A7 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		88F3A77D1F2F2C6A00174869 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		88F3A77F1F2F32CE00174869 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		88F3A7811F2F348E00174869 /* CreateAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		88FFDC441F417FC6005658A7 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				88CA29F11F2F1E18006CB633 /* GradientView.swift */,
 				88DE02511F331F6700EA8E59 /* RoundedButton.swift */,
 				886FBE0B1F4077F900CBAA0F /* AvatarCell.swift */,
+				88FFDC441F417FC6005658A7 /* CircleImage.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				88CA29F01F2F17CD006CB633 /* ChannelVC.swift in Sources */,
 				886FBE0A1F40752B00CBAA0F /* AvatarPickerVC.swift in Sources */,
 				88DE02521F331F6700EA8E59 /* RoundedButton.swift in Sources */,
+				88FFDC451F417FC6005658A7 /* CircleImage.swift in Sources */,
 				88CA29EE1F2F17B8006CB633 /* ChatVC.swift in Sources */,
 				886FBE081F40318300CBAA0F /* UserDataService.swift in Sources */,
 				88F3A7821F2F348E00174869 /* CreateAccountVC.swift in Sources */,
