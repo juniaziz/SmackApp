@@ -285,6 +285,7 @@
                     </view>
                     <connections>
                         <outlet property="logInBtn" destination="RAq-TP-Ljy" id="K3I-Nr-x49"/>
+                        <outlet property="userImage" destination="uia-Jq-xtZ" id="3Pv-FV-raQ"/>
                         <segue destination="hpb-Dr-jXH" kind="show" identifier="toLogin" id="zgJ-zU-ZPl"/>
                     </connections>
                 </viewController>
