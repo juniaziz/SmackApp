@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2DBAF8D7F5A82C9CE017486D /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44939A0360E5F01C1DAFE7D8 /* Pods_smack.framework */; };
 		886FBE081F40318300CBAA0F /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886FBE071F40318300CBAA0F /* UserDataService.swift */; };
+		886FBE0A1F40752B00CBAA0F /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886FBE091F40752B00CBAA0F /* AvatarPickerVC.swift */; };
+		886FBE0C1F4077F900CBAA0F /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886FBE0B1F4077F900CBAA0F /* AvatarCell.swift */; };
 		88CA29B61F2F097F006CB633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CA29B51F2F097F006CB633 /* AppDelegate.swift */; };
 		88CA29BB1F2F097F006CB633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CA29B91F2F097F006CB633 /* Main.storyboard */; };
 		88CA29BD1F2F097F006CB633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CA29BC1F2F097F006CB633 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		41BC942B7E600A9B4084B8E5 /* Pods-smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.release.xcconfig"; sourceTree = "<group>"; };
 		44939A0360E5F01C1DAFE7D8 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886FBE071F40318300CBAA0F /* UserDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		886FBE091F40752B00CBAA0F /* AvatarPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		886FBE0B1F4077F900CBAA0F /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		88CA29B21F2F097F006CB633 /* smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CA29B51F2F097F006CB633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88CA29BA1F2F097F006CB633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				88CA29EF1F2F17CD006CB633 /* ChannelVC.swift */,
 				88F3A77F1F2F32CE00174869 /* LoginVC.swift */,
 				88F3A7811F2F348E00174869 /* CreateAccountVC.swift */,
+				886FBE091F40752B00CBAA0F /* AvatarPickerVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			children = (
 				88CA29F11F2F1E18006CB633 /* GradientView.swift */,
 				88DE02511F331F6700EA8E59 /* RoundedButton.swift */,
+				886FBE0B1F4077F900CBAA0F /* AvatarCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88CA29F01F2F17CD006CB633 /* ChannelVC.swift in Sources */,
+				886FBE0A1F40752B00CBAA0F /* AvatarPickerVC.swift in Sources */,
 				88DE02521F331F6700EA8E59 /* RoundedButton.swift in Sources */,
 				88CA29EE1F2F17B8006CB633 /* ChatVC.swift in Sources */,
 				886FBE081F40318300CBAA0F /* UserDataService.swift in Sources */,
@@ -300,6 +307,7 @@
 				88DE024E1F32F70300EA8E59 /* AuthService.swift in Sources */,
 				88F3A7801F2F32CE00174869 /* LoginVC.swift in Sources */,
 				88CA29F21F2F1E18006CB633 /* GradientView.swift in Sources */,
+				886FBE0C1F4077F900CBAA0F /* AvatarCell.swift in Sources */,
 				88CA29B61F2F097F006CB633 /* AppDelegate.swift in Sources */,
 				88CA29E91F2F13DD006CB633 /* SWRevealViewController.m in Sources */,
 				88F3A77E1F2F2C6A00174869 /* Constants.swift in Sources */,
