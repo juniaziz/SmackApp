@@ -73,7 +73,7 @@ class UserDataService {
         email = ""
         name = ""
         AuthService.instance.isLoggedIn = false
-        AuthService.instance.userEmal = ""
+        AuthService.instance.userEmail = ""
         AuthService.instance.authToken = ""
         
     }

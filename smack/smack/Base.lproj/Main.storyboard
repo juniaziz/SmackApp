@@ -400,16 +400,22 @@
                                     <action selector="createAccountBtnPressed:" destination="hpb-Dr-jXH" eventType="touchUpInside" id="NGo-BP-CL6"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Jpu-vG-ZHK">
+                                <rect key="frame" x="169" y="265" width="37" height="37"/>
+                                <color key="color" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LMu-Up-v1W" firstAttribute="top" secondItem="s7z-ef-OM2" secondAttribute="bottom" constant="60" id="7Dh-or-TcQ"/>
                             <constraint firstItem="LMu-Up-v1W" firstAttribute="centerX" secondItem="iY9-fo-gjb" secondAttribute="centerX" id="Aeq-xy-NZ5"/>
                             <constraint firstItem="XX1-kr-Exc" firstAttribute="centerX" secondItem="iY9-fo-gjb" secondAttribute="centerX" id="O1D-jP-gcG"/>
+                            <constraint firstItem="Jpu-vG-ZHK" firstAttribute="centerY" secondItem="iY9-fo-gjb" secondAttribute="centerY" constant="-50" id="S3V-mk-tjE"/>
                             <constraint firstItem="Tsd-uJ-H2N" firstAttribute="centerX" secondItem="iY9-fo-gjb" secondAttribute="centerX" id="W9h-zp-v1M"/>
                             <constraint firstItem="Xd5-E5-kvx" firstAttribute="centerX" secondItem="iY9-fo-gjb" secondAttribute="centerX" id="YRl-DS-V3L"/>
                             <constraint firstItem="Tsd-uJ-H2N" firstAttribute="top" secondItem="XX1-kr-Exc" secondAttribute="bottom" constant="40" id="ZWx-Co-6uf"/>
                             <constraint firstItem="jqi-sv-NMK" firstAttribute="trailing" secondItem="iY9-fo-gjb" secondAttribute="trailingMargin" id="ajL-Py-KwM"/>
+                            <constraint firstItem="Jpu-vG-ZHK" firstAttribute="centerX" secondItem="iY9-fo-gjb" secondAttribute="centerX" id="kO6-FV-oaj"/>
                             <constraint firstItem="XX1-kr-Exc" firstAttribute="top" secondItem="LMu-Up-v1W" secondAttribute="bottom" constant="60" id="ltQ-Al-jmN"/>
                             <constraint firstItem="Xd5-E5-kvx" firstAttribute="top" secondItem="Tsd-uJ-H2N" secondAttribute="bottom" constant="10" id="lyc-We-rad"/>
                             <constraint firstItem="jqi-sv-NMK" firstAttribute="top" secondItem="s7z-ef-OM2" secondAttribute="bottom" constant="8" id="muP-Qs-Hrr"/>
@@ -417,6 +423,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordTxt" destination="T65-0f-DZi" id="x1k-xK-rhb"/>
+                        <outlet property="spinner" destination="Jpu-vG-ZHK" id="abK-oE-CJE"/>
                         <outlet property="userNameTxt" destination="Cuy-mt-wSI" id="jOJ-c9-W9C"/>
                         <segue destination="bpx-Ph-jTE" kind="show" identifier="toCreateAccount" id="HZb-59-RJH"/>
                     </connections>

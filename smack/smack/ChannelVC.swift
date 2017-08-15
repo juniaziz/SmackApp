@@ -30,17 +30,25 @@ class ChannelVC: UIViewController {
     @IBAction func logInBtnPressed(_ sender: Any) {
         
         if AuthService.instance.isLoggedIn {
+            
             let profile = ProfileVC()
             profile.modalPresentationStyle = .custom
             present(profile, animated: true, completion: nil)
+            
         }
         
         else {
+            
             performSegue(withIdentifier: TO_LOGIN, sender: nil)
+            
         }
     }
     
     func userDataDidChange(_ notif: Notification) {
+        setUpUserData()
+    }
+    
+    func setUpUserData() {
         if AuthService.instance.isLoggedIn {
             logInBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImage.image = UIImage(named: UserDataService.instance.avatarName)

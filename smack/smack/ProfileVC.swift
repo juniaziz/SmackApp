@@ -18,13 +18,16 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var emailTxt: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         setUpView()
         // Do any additional setup after loading the view.
+        
     }
 
     
     func setUpView() {
+        
         userName.text = UserDataService.instance.name
         emailTxt.text = UserDataService.instance.email
         profileImage.image = UIImage(named: UserDataService.instance.avatarName)
@@ -32,22 +35,26 @@ class ProfileVC: UIViewController {
         
         let closeTouch = UITapGestureRecognizer(target: self, action: #selector(ProfileVC.closeTap(_:)))
         bgView.addGestureRecognizer(closeTouch)
+        
     }
     
-    func closeTap(_ recognize: UITapGestureRecognizer){
+    func closeTap(_ recognize: UITapGestureRecognizer) {
+        
         dismiss(animated: true, completion: nil)
+        
     }
     
     @IBAction func closeModalBtnPressed(_ sender: Any) {
+        
         self.dismiss(animated: true, completion: nil)
+        
     }
     
     @IBAction func logOutPressed(_ sender: Any) {
+        
         UserDataService.instance.logOutUser()
         NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         dismiss(animated: true, completion: nil)
         
     }
-
-    
 }

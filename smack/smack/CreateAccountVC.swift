@@ -9,7 +9,7 @@
 import UIKit
 
 class CreateAccountVC: UIViewController {
-
+    
     @IBOutlet weak var userNameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
@@ -32,8 +32,8 @@ class CreateAccountVC: UIViewController {
         
         setUpView()
         
-    
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -47,7 +47,7 @@ class CreateAccountVC: UIViewController {
             }
         }
     }
-
+    
     @IBAction func closedBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
@@ -62,7 +62,7 @@ class CreateAccountVC: UIViewController {
         UIView.animate(withDuration: 0.2) {
             self.userImage.backgroundColor = self.bgColor
         }
-    
+        
     }
     
     
@@ -101,21 +101,21 @@ class CreateAccountVC: UIViewController {
         
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success {
-               AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
-                if success {
-                    AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
-                       
-                        if success {
-                            self.spinner.isHidden = true
-                            self.spinner.stopAnimating()
-                            NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
-                            self.performSegue(withIdentifier: UNWIND, sender: nil)
-                        }
-                    })
-                }
-               })
-            
-            
+                AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
+                    if success {
+                        AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
+                            
+                            if success {
+                                self.spinner.isHidden = true
+                                self.spinner.stopAnimating()
+                                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+                                self.performSegue(withIdentifier: UNWIND, sender: nil)
+                            }
+                        })
+                    }
+                })
+                
+                
             } else {
                 print("registeration failed")
             }
