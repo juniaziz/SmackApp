@@ -11,6 +11,7 @@ import UIKit
 class ChannelVC: UIViewController {
 
     
+    @IBOutlet weak var channelsTableView: UITableView!
     
     @IBOutlet weak var userImage: CircleImage!
     @IBOutlet weak var logInBtn: UIButton!
@@ -44,6 +45,16 @@ class ChannelVC: UIViewController {
         }
     }
     
+    
+    func setUpView() {
+        
+        
+        
+        
+    }
+    
+    
+    
     func userDataDidChange(_ notif: Notification) {
         setUpUserData()
     }
@@ -60,7 +71,25 @@ class ChannelVC: UIViewController {
             
         }
     }
-   
+}
+
+
+extension ChannelVC: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = channelsTableView.dequeueReusableCell(withIdentifier: "channelCell", for: indexPath)
+        
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageService.instance.channels.count
+    }
     
     
 }

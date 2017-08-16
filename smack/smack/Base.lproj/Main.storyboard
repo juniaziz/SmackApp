@@ -232,7 +232,7 @@
                                 <rect key="frame" x="0.0" y="125" width="375" height="427"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Nu6-NO-Fdm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" id="Nu6-NO-Fdm">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nu6-NO-Fdm" id="fHS-oA-KrX">
@@ -284,6 +284,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="channelsTableView" destination="tvG-ID-Xws" id="G4i-sB-DJX"/>
                         <outlet property="logInBtn" destination="RAq-TP-Ljy" id="K3I-Nr-x49"/>
                         <outlet property="userImage" destination="uia-Jq-xtZ" id="3Pv-FV-raQ"/>
                         <segue destination="hpb-Dr-jXH" kind="show" identifier="toLogin" id="zgJ-zU-ZPl"/>

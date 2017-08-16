@@ -28,6 +28,8 @@
 		88FFDC481F41A92C005658A7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFDC461F41A92C005658A7 /* ProfileVC.swift */; };
 		88FFDC491F41A92C005658A7 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88FFDC471F41A92C005658A7 /* ProfileVC.xib */; };
 		88FFDC4C1F41D217005658A7 /* RoundedViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFDC4B1F41D217005658A7 /* RoundedViewVC.swift */; };
+		88FFDC4E1F4432DB005658A7 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFDC4D1F4432DB005658A7 /* MessageService.swift */; };
+		88FFDC501F443468005658A7 /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFDC4F1F443468005658A7 /* Channels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		88FFDC461F41A92C005658A7 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		88FFDC471F41A92C005658A7 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		88FFDC4B1F41D217005658A7 /* RoundedViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedViewVC.swift; sourceTree = "<group>"; };
+		88FFDC4D1F4432DB005658A7 /* MessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		88FFDC4F1F443468005658A7 /* Channels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 		88CA29EC1F2F179D006CB633 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88FFDC4F1F443468005658A7 /* Channels.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			children = (
 				88DE024D1F32F70300EA8E59 /* AuthService.swift */,
 				886FBE071F40318300CBAA0F /* UserDataService.swift */,
+				88FFDC4D1F4432DB005658A7 /* MessageService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 				88FFDC4C1F41D217005658A7 /* RoundedViewVC.swift in Sources */,
 				88DE02521F331F6700EA8E59 /* RoundedButton.swift in Sources */,
 				88FFDC451F417FC6005658A7 /* CircleImage.swift in Sources */,
+				88FFDC4E1F4432DB005658A7 /* MessageService.swift in Sources */,
 				88CA29EE1F2F17B8006CB633 /* ChatVC.swift in Sources */,
 				886FBE081F40318300CBAA0F /* UserDataService.swift in Sources */,
 				88F3A7821F2F348E00174869 /* CreateAccountVC.swift in Sources */,
@@ -333,6 +340,7 @@
 				88CA29F21F2F1E18006CB633 /* GradientView.swift in Sources */,
 				886FBE0C1F4077F900CBAA0F /* AvatarCell.swift in Sources */,
 				88CA29B61F2F097F006CB633 /* AppDelegate.swift in Sources */,
+				88FFDC501F443468005658A7 /* Channels.swift in Sources */,
 				88CA29E91F2F13DD006CB633 /* SWRevealViewController.m in Sources */,
 				88F3A77E1F2F2C6A00174869 /* Constants.swift in Sources */,
 			);

@@ -77,7 +77,4 @@ class UserDataService {
         AuthService.instance.authToken = ""
         
     }
-    
-    
-    
 }
